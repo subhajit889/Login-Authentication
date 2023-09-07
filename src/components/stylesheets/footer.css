@@ -1,0 +1,44 @@
+/* Default styles for larger screens */
+.container {
+  background-color: #091137;
+  padding: 18.2px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.social-icon:hover {
+  color: #ff5733;
+}
+
+/* Mobile and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px 0;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .social-icon {
+    font-size: 32px;
+    margin-right: 15px;
+  }
+}

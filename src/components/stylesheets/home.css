@@ -1,0 +1,220 @@
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: url('https://images.hdqwalls.com/wallpapers/beautiful-landscape-nature-scenery-1d.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #f50505;
+  height: 72vh;
+}
+
+.section1 {
+  flex: 2;
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+
+.login-box {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section1-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.section1-para {
+  font-size: 18px;
+}
+
+.register-here {
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff5733;
+}
+
+.login-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+}
+
+.login-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+.home-back {
+  width: 100%;
+  padding: 10px;
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.home-back:hover {
+  background-color: #999;
+}
+
+.login-btn {
+  margin-top: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #b94b29;
+  transform: scale(1.05);
+}
+
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.login-btn.animated {
+  animation: pulseAnimation 1s infinite;
+}
+
+.logout-btn{
+  margin-top: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.total-section {
+  height: 72vh;
+}
+
+.section1 {
+  flex: 2;
+}
+
+.login-box {
+  flex: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  .total-section {
+    height: auto;
+    padding: 10px;
+  }
+
+  .section1 {
+    flex: 1;
+  }
+
+  .login-box {
+    flex: 1;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .total-section {
+    flex-direction: column;
+  }
+
+  .section1 {
+    order: 2;
+  }
+
+  .login-box {
+    order: 1;
+  }
+
+  .login-box,
+  .section1 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
+
